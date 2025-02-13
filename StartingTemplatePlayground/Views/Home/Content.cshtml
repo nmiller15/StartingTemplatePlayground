@@ -1,0 +1,10 @@
+﻿@model StartingTemplatePlayground.Models.ContentViewModel
+@{
+    ViewData["Title"] = "Content";
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>@Model.Content</p>
+
+<a asp-action="Content" asp-route-length="@(Model.Length - 1)" class="btn btn-secondary">-</a>
+<a asp-action="Content" asp-route-length="@(Model.Length + 1)" class="btn btn-primary">+</a>

@@ -1,0 +1,7 @@
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\StartingTemplatePlayground.exe
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\appsettings.json
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\StartingTemplatePlayground.dll
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\StartingTemplatePlayground.deps.json
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\StartingTemplatePlayground.runtimeconfig.json
+C:\Code\StartingTemplatePlayground\StartingTemplatePlayground\bin\Release\net9.0\publish\StartingTemplatePlayground.pdb

@@ -1,0 +1,11 @@
+C:\Code\StartingTemplatePlayground\TestClassLib\bin\Debug\net9.0\TestClassLib.deps.json
+C:\Code\StartingTemplatePlayground\TestClassLib\bin\Debug\net9.0\TestClassLib.dll
+C:\Code\StartingTemplatePlayground\TestClassLib\bin\Debug\net9.0\TestClassLib.pdb
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\TestClassLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\TestClassLib.AssemblyInfoInputs.cache
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\TestClassLib.AssemblyInfo.cs
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\TestClassLib.csproj.CoreCompileInputs.cache
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\TestClassLib.dll
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\refint\TestClassLib.dll
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\TestClassLib.pdb
+C:\Code\StartingTemplatePlayground\TestClassLib\obj\Debug\net9.0\ref\TestClassLib.dll
