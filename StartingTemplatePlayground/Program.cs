@@ -9,6 +9,8 @@ namespace StartingTemplatePlayground
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            
+
             builder.Services.AddScoped<IContentGenerator, LoremIpsumService>();
             builder.Services.AddTransient<IRandomFactProvider, RandomFactProvider>();
             // builder.Services.AddSingleton<IRandomFactProvider, RandomFactProvider>();
@@ -20,7 +22,6 @@ namespace StartingTemplatePlayground
             
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
 
             var app = builder.Build();
 

@@ -8,25 +8,35 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/nolanmiller/.nuget/packages/": {}
+    "C:\\Users\\NMiller\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nolanmiller/Projects/StartingTemplatePlayground/Services/Services.csproj",
+      "projectUniqueName": "C:\\Code\\StartingTemplatePlayground\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "/Users/nolanmiller/Projects/StartingTemplatePlayground/Services/Services.csproj",
-      "packagesPath": "/Users/nolanmiller/.nuget/packages/",
-      "outputPath": "/Users/nolanmiller/Projects/StartingTemplatePlayground/Services/obj/",
+      "projectPath": "C:\\Code\\StartingTemplatePlayground\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\NMiller\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\StartingTemplatePlayground\\Services\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/nolanmiller/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\NMiller\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/haHrYF2892XVwXTeT9v2bIcEQWrroFIg1FNwwT6nOJLEMElXZB/api/v3/index.json": {},
+        "https://nuget.pkg.github.com/CertifiedAngusBeef/index.json": {}
       },
       "frameworks": {
         "net9.0": {
@@ -42,7 +52,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -65,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
