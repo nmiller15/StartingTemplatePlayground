@@ -11,12 +11,14 @@ namespace StartingTemplatePlayground.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IContentGenerator _contentGenerator;
         private readonly IRandomFactProvider _randomFactProvider;
+        private readonly IRandomFactProvider _randomFactProvider2;
 
-        public HomeController(ILogger<HomeController> logger, IContentGenerator contentGenerator, IRandomFactProvider randomFactProvider)
+        public HomeController(ILogger<HomeController> logger, IContentGenerator contentGenerator, IRandomFactProvider randomFactProvider, IRandomFactProvider randomFactProvider2)
         {
             _logger = logger;
             _contentGenerator = contentGenerator;
             _randomFactProvider = randomFactProvider;
+            _randomFactProvider2 = randomFactProvider2;
         }
 
         public IActionResult Index()
@@ -34,24 +36,6 @@ namespace StartingTemplatePlayground.Controllers
             var viewModel = new ContentViewModel { Length = length };
             var content = _contentGenerator.Generate(length);
             viewModel.Content = content;
-            return View(viewModel);
-        }
-
-        public IActionResult Facts()
-        {
-            var factType = RandomFactProvider.FactTypes.Animal;
-
-            var viewModel = new FactsViewModel(false, null);
-            viewModel.Fact = _randomFactProvider.GetFact(factType);
-
-            return View(viewModel);
-        }
-
-        public IActionResult OtherFacts()
-        {
-            var factType = RandomFactProvider.FactTypes.Space;
-
-            var viewModel = new FactsViewModel(true, factType);
             return View(viewModel);
         }
 

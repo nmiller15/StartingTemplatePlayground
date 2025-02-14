@@ -1,0 +1,16 @@
+﻿@model StartingTemplatePlayground.Models.FactsViewModel
+@{
+    ViewData["Subtitle"] = "Facts";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2>@ViewData["Subtitle"]</h2>
+
+<p>Scoped Fact 1: @Model.Fact</p>
+<p>Scoped Fact 2: @Model.Fact2</p>
+
+<div class="flex gap-2">
+    @* Add buttons for redirection *@
+</div>
+
+

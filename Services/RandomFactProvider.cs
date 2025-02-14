@@ -15,6 +15,8 @@ namespace Services
             Space,
             Historical
         }
+        
+        private string Fact { get; set; }
 
         private readonly string[] _animalFacts = new[]
         {
@@ -54,11 +56,14 @@ namespace Services
                 FactTypes.Space => _spaceFacts,
                 FactTypes.Historical => _historicalFacts
             };
-
+            if (!HasBeenUsed)
+            {
+                var random = new Random();
+                int index = random.Next(facts.Length);
+                Fact = facts[index];
+            }
             HasBeenUsed = true;
-            var random = new Random();
-            int index = random.Next(facts.Length);
-            return facts[index];
+            return Fact;
         }
 
         public RandomFactProvider()

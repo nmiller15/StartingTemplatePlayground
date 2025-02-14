@@ -9,11 +9,18 @@ namespace StartingTemplatePlayground
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddScoped<IContentGenerator, LoremIpsumService>();
+            builder.Services.AddTransient<IRandomFactProvider, RandomFactProvider>();
+            // builder.Services.AddSingleton<IRandomFactProvider, RandomFactProvider>();
+            // builder.Services.AddScoped<IRandomFactProvider, RandomFactProvider>();
+
+            builder.Services.AddTransient<TransientRandomFactGenerator>();
+            builder.Services.AddScoped<ScopedRandomFactGenerator>();
+            builder.Services.AddSingleton<SingletonRandomFactGenerator>();
+            
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddSingleton<IContentGenerator, LoremIpsumService>();
-            builder.Services.AddTransient<IRandomFactProvider, RandomFactProvider>();
 
             var app = builder.Build();
 

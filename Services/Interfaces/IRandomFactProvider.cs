@@ -9,6 +9,7 @@ namespace Services.Interfaces
 {
     public interface IRandomFactProvider
     {
+        bool HasBeenUsed { get; set; }
         string GetFact(FactTypes factType);
     }
 }

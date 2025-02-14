@@ -6,23 +6,14 @@ namespace StartingTemplatePlayground.Models
 {
     public class FactsViewModel
     {
-        private readonly IRandomFactProvider _factProvider = null;
-
         public string Fact { get; set; } = String.Empty;
+        public string Fact2 { get; set; } = String.Empty;
 
-        public bool ProviderHasBeenUsed = false;
-
-        public bool InternalFactProviderUsed = false;
-
-        public FactsViewModel(bool usesInternal, RandomFactProvider.FactTypes? factType)
+        public FactsViewModel(string fact)
         {
-            if (usesInternal && factType != null)
-            {
-                IRandomFactProvider factProvider = new RandomFactProvider();
-                _factProvider = factProvider;
-                InternalFactProviderUsed = true;
-                Fact = _factProvider.GetFact(factType.GetValueOrDefault());
-            }
+            Fact = fact;
         }
+        
+        public FactsViewModel() { }
     }
 }
